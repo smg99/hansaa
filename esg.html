@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            transition: transform 1s ease;
+        }
+        #screen1 { background-color: #2f386c; color: white; }
+        #screen2 { background-color: #88bee3; color: white; }
+        #screen3 { background-color: #d8cc9f; color: white; }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+        .nav-button {
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #e94471;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #c9375b;
+        }
+    </style>
+</head>
+<body>
+
+<div id="screen1" class="screen">
+    <h1>Welcome to Our Fair</h1>
+    <p>Discover our services and sustainability efforts. Touch below to continue.</p>
+    <button class="nav-button" onclick="navigateTo(2)">Next</button>
+</div>
+
+<div id="screen2" class="screen">
+    <h1>Our Services</h1>
+    <p>We provide high-quality repair services, extending the life of products and contributing to a sustainable future.</p>
+    <button class="nav-button" onclick="navigateTo(1)">Previous</button>
+    <button class="nav-button" onclick="navigateTo(3)">Next</button>
+</div>
+
+<div id="screen3" class="screen">
+    <h1>Contact Us</h1>
+    <p>Feel free to reach out during the fair or connect with us online for more details.</p>
+    <button class="nav-button" onclick="navigateTo(2)">Previous</button>
+</div>
+
+<script>
+    function navigateTo(screen) {
+        document.querySelectorAll('.screen').forEach((s, index) => {
+            s.style.transform = `translateX(${(index - screen + 1) * 100}vw)`;
+        });
+    }
+</script>
+
+</body>
+</html>
