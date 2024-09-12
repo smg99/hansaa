@@ -38,6 +38,11 @@ body, html {
   align-items: center;
 }
 
+.carousel.tower {
+  height: 25%;
+  bottom: 0;
+}
+
 .carousel-slide {
   position: absolute;
   width: 100%;
@@ -106,13 +111,34 @@ body, html {
   position: absolute;
   bottom: 2vh;
   right: 2vw;
-  width: 15vw;
+  width: 20vw;
   height: auto;
   background-color: rgb(221 211 211 / 79%);
   padding: 1vh;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 15;
+}
+
+
+.side-logo-container {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  justify-content: flex-start;
+  padding: 1vh; /* Padding to move logos slightly away from the edge */
+  background-color: rgba(221, 211, 211, 0.79); /* Same background color as the main logo */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 15;
+}
+
+.side-logo {
+  margin-right: 1vw; /* Horizontal space between each logo */
+  width: 6vw; /* Adjust the size to fit large screens */
+  height: auto;
 }
 
 /* Fullscreen Icons */

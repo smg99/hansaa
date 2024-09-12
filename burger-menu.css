@@ -9,14 +9,14 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 5;
+  z-index: 15;
 }
 
 .burger-menu .line {
   width: 100%;
-  height: 1vh;
+  height: 1.5vh;
   background-color: var(--the-sands);
-  border-radius: 0.5vw;
+  /* border-radius: 0.5vw; */
   transition: all 0.3s ease; /* Smooth transition for transformation */
 }
 
@@ -42,7 +42,7 @@
   background-color: var(--tarp-blue);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
-  z-index: 4;
+  z-index: 11;
   padding-top: 5vh;
 }
 
@@ -71,4 +71,46 @@
 
 .menu ul li a:hover {
   color: var(--sky-blue);
+}
+
+
+/* Close Icon (Cross with Two Lines) */
+.close-icon {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 4vw;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 20;
+  /* On top of all elements */
+}
+
+.close-icon .line {
+  width: 100%;
+  height: 1.5vh;
+  background-color: var(--the-sands);
+  /* Same color as the burger menu lines */
+  /* border-radius: 0.5vw; */
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.close-icon .line:nth-child(1) {
+  transform: rotate(45deg);
+  /* First line rotated 45 degrees */
+  top: 2vh;
+  /* Keep it within the container */
+
+}
+
+.close-icon .line:nth-child(2) {
+  transform: rotate(-45deg);
+  /* Second line rotated -45 degrees */
+  top: 2vh;
+  /* Keep it within the container */
+
 }
