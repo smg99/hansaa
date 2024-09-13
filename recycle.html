@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hans Aa General Info</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="tower.css"> <!-- Page-specific styles for tower.html -->
+  <link rel="stylesheet" href="burger-menu.css"> <!-- Burger menu styles -->
+</head>
+<style>
+  /* Position the marquee container at the bottom of the page */
+  .marquee-container {
+    position: absolute;
+    bottom: 5vw;
+    left: 0;
+    width: 100vw;
+    /* height: 25%; */
+    /* Height of the marquee */
+    overflow: hidden;
+    z-index: 1;
+    /* Ensure it stays in the background */
+  }
+
+  /* The actual marquee with images */
+  .marquee {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: marquee 20s linear infinite;
+    /* Scrolls the images */
+  }
+
+  .marquee img {
+    height: 100%;
+    margin-right: 0.3vw;
+    /* Space between images */
+  }
+
+  /* Animation to scroll the images */
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .info-section {
+    position: absolute;
+    bottom: 30vh;
+    right: 0;
+    padding: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: 10;
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .info-section h1 {
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .info-section h1,
+  .info-section p {
+    text-shadow: none;
+  }
+
+  .info-section p {
+    margin-top: 0;
+    font-size: 3vw;
+  }
+
+  .info-section-logo {
+    height: 22vh;
+    padding: 2vh;
+  }
+
+  #process {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    color: var(--tarp-blue);
+  }
+
+  .media-container {
+    height: 70%;
+  }
+
+  .step {
+    text-align: center;
+    font-size: 1.6vw;
+  }
+
+  .step p {
+    margin: 0;
+  }
+
+  .step img {
+    width: 5vw;
+    /* Adjust size as needed */
+  }
+
+  .side-logo-container,
+  .logo {
+    box-shadow: none;
+  }
+</style>
+
+<body>
+  <div class="background">
+    <!-- Close Icon to go back to home page -->
+    <div class="close-icon" aria-label="Close" onclick="goHome()">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Load the burger menu -->
+    <div id="burger-menu-container"></div>
+
+    <!-- Main Content Area (Full video display) -->
+    <div class="media-container tower">
+      <!-- Full-screen video -->
+      <video src="./set2/20240711_114823000_iOS.MOV" autoplay muted loop class="main-video"></video>
+    </div>
+
+    <!-- Marquee-like Image Gallery Section (Scrolling images) -->
+    <div class="marquee-container">
+      <section id="process">
+        <div class="step">
+          <img src="./images/icons/icons8.png" alt="Shredded Covers">
+          <p>Retired covers are shredded into pieces</p>
+        </div>
+        <div class="step">
+          <img src="./images/icons/icons9.png" alt="Washing Pieces">
+          <p>Sorting of pieces and washing of PP</p>
+        </div>
+        <div class="step">
+          <img src="./images/icons/icons10.png" alt="PP Granules">
+          <p>The sorted PP material is transformed into granules</p>
+        </div>
+        <div class="step">
+          <img src="./images/icons/RepairReuse2_Transparent.png" alt="New Products">
+          <p>The granules are used for new products</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="side-logo-container">
+      <img src="./images/Innovation_The Sands_RGB.png" alt="" class="side-logo">
+      <img src="./images/RepairReuse Background Removed.png" alt="" class="side-logo">
+    </div>
+
+    <!-- Company Logo -->
+    <img src="./images/HansAa_The_sands_transparent.png" alt="Company Logo" class="logo">
+
+    <!-- Textual Information Section -->
+    <div class="info-section">
+      <div class="info-section-text">
+        <h1>Recycle our covers</h1>
+        <p>
+          Make it new
+        </p>
+      </div>
+      <div class="info-section-logo">
+        <img src="./images/PVC Free_Tarp Blue_RGB_Cropped.png" style="height: 100%;" />
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      // Check if fullscreen was enabled before navigation
+      const shouldBeFullscreen = localStorage.getItem('fullscreen') === 'true';
+
+      if (shouldBeFullscreen && !document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.error(`Failed to re-enter fullscreen: ${err.message}`);
+        });
+      }
+    });
+
+    // Load the burger menu HTML into the container
+    fetch('burger-menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('burger-menu-container').innerHTML = html;
+      });
+  </script>
+</body>
+
+</html>

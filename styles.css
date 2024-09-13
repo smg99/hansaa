@@ -1,14 +1,35 @@
 :root {
-  --tarp-blue: #2f386c; /* Primary Color */
-  --sky-blue: #88bee3;  /* Secondary Color */
-  --the-sands: #d8cc9f; /* Tertiary Color */
-  --light-raspberry: #e94471; /* Accent Color */
-  --white: #ffffff; /* Primary Background Color */
-  --font-heading: 'Nexa Bold', sans-serif;
+  --tarp-blue: #2f386c;
+  /* Primary Color */
+  --sky-blue: #88bee3;
+  /* Secondary Color */
+  --the-sands: #d8cc9f;
+  /* Tertiary Color */
+  --light-raspberry: #e94471;
+  /* Accent Color */
+  --white: #ffffff;
+  /* Primary Background Color */
+  --font-heading: 'Nexa Bold', Arial;
   --font-body: 'Nexa Slap Book', sans-serif;
 }
 
-body, html {
+@font-face {
+  font-family: 'Nexa Slap Book';
+  src: url('fonts/nexa_slab_book.woff2') format('woff2'),
+    url('fonts/Nexa-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('fonts/Nexa-Bold.woff2') format('woff2'),
+    url('fonts/Nexa-Bold.woff') format('woff');
+}
+
+
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -93,7 +114,8 @@ body, html {
 }
 
 .carousel-dot:hover {
-  background-color: var(--light-raspberry); /* Accent color on hover */
+  background-color: var(--light-raspberry);
+  /* Accent color on hover */
 }
 
 /* Close Icon */
@@ -126,9 +148,11 @@ body, html {
   bottom: 2vh;
   left: 2vw;
   display: flex;
-  flex-direction: row; /* Horizontal alignment */
+  flex-direction: row;
+  /* Horizontal alignment */
   justify-content: flex-start;
-  padding: 1vh; /* Padding to move logos slightly away from the edge */
+  padding: 1vh;
+  /* Padding to move logos slightly away from the edge */
   /* background-color: rgba(221, 211, 211, 0.79); */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -136,8 +160,10 @@ body, html {
 }
 
 .side-logo {
-  margin-right: 1vw; /* Horizontal space between each logo */
-  width: 6vw; /* Adjust the size to fit large screens */
+  margin-right: 1vw;
+  /* Horizontal space between each logo */
+  width: 6vw;
+  /* Adjust the size to fit large screens */
   height: auto;
 }
 
