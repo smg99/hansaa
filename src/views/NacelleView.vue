@@ -56,6 +56,6 @@ damaged from dirt or water.`,
 
 <style scoped>
 .background {
-  background-image: url("set3/NACELLE.JPG");
+  background-image: url("../set3/NACELLE.JPG");
 }
 </style>

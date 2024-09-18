@@ -59,6 +59,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("set4/TOPCOVER.jpg");
+  background-image: url("../set4/TOPCOVER.jpg");
 }
 </style>

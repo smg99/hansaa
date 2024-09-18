@@ -55,6 +55,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("set4/DRIVETRAIN MAIN.jpg");
+  background-image: url("../set4/DRIVETRAIN MAIN.jpg");
 }
 </style>

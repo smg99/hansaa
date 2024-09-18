@@ -64,6 +64,6 @@ perfectly fitted protection cover.`,
 
 <style scoped>
 .background {
-  background-image: url("set3/HubOnDeck_HansAa.jpg");
+  background-image: url("../set3/HubOnDeck_HansAa.jpg");
 }
 </style>

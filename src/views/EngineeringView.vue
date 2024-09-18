@@ -17,7 +17,7 @@ export default {
     return {
       headerText: "Innovative engineering",
       subHeaderText: `Our extensive experience in cover solutions, <br />
-gives you the benefits of:`,
+      gives you the benefits of:`,
       paragraphText: `- Advanced in-house engineering <br/>
                       - Innovative tailored design <br/>
                       - Seamless integration from idea to
@@ -75,6 +75,6 @@ gives you the benefits of:`,
 
 <style scoped>
 .background {
-  background-image: url("./set1/Good\ images/042_Hans-Aa_Siemens_Oesthavn-Esbjerg_CHO.JPG");
+  background-image: url("../set1/Good\ images/042_Hans-Aa_Siemens_Oesthavn-Esbjerg_CHO.JPG");
 }
 </style>
