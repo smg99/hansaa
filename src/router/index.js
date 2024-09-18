@@ -33,6 +33,41 @@ const router = createRouter({
       path: '/engineering',
       name: 'engineering',
       component: () => import('../views/EngineeringView.vue')
+    },
+    {
+      path: '/ec',
+      name: 'ec',
+      component: () => import('../views/ECView.vue')
+    },
+    {
+      path: '/drivetrain-generators',
+      name: 'drivetrain-generators',
+      component: () => import('../views/DrivetrainGeneratorsView.vue')
+    },
+    {
+      path: '/top-cover',
+      name: 'top-cover',
+      component: () => import('../views/TopCoverView.vue')
+    },
+    {
+      path: '/recycle',
+      name: 'recycle',
+      component: () => import('../views/RecycleView.vue')
+    },
+    {
+      path: '/reuse',
+      name: 'reuse',
+      component: () => import('../views/ReuseView.vue')
+    },
+    {
+      path: '/quality',
+      name: 'quality',
+      component: () => import('../views/QualityView.vue')
+    },
+    {
+      path: '/meet-us',
+      name: 'meetus',
+      component: () => import('../views/MeetUsView.vue')
     }
   ]
 })
