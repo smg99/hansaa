@@ -15,14 +15,14 @@
     <!-- Side Menu -->
     <div :class="['menu', { active: isMenuOpen }]" id="menu">
       <ul>
-        <li><RouterLink to="/info">Hans Aa General Info</RouterLink></li>
+        <li><RouterLink to="/">Hans Aa General Info</RouterLink></li>
         <li><RouterLink to="/esg">ESG Strategy</RouterLink></li>
         <li><RouterLink to="/repair">Repair & Reuse Program</RouterLink></li>
         <li><RouterLink to="/recycle">Recycling Program</RouterLink></li>
         <li><RouterLink to="/quality">Quality</RouterLink></li>
-        <li><RouterLink to="/team">Meet the Team</RouterLink></li>
+        <li><RouterLink to="/meet-us">Meet the Team</RouterLink></li>
         <li><RouterLink to="/engineering">Logo Engineering</RouterLink></li>
-        <li><RouterLink to="/facilities">Facilities, World Map</RouterLink></li>
+        <li><RouterLink to="/meet-us">Facilities, World Map</RouterLink></li>
       </ul>
     </div>
   </div>
