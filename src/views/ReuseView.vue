@@ -14,7 +14,7 @@ export default {
       headerText: "Reuse our covers - 20+ times",
       items: [
         {
-          src: "icons/icons8.png",
+          src: "icons/Water_RGB.jpg",
           label: "Covers are washed and inspected",
         },
         {
@@ -22,7 +22,7 @@ export default {
           label: "Covers are repaired for maximum utilization",
         },
         {
-          src: "icons/icons10.png",
+          src: "icons/Reuse_Green.png",
           label: "Ready for reuse!",
         },
       ],
