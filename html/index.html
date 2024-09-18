@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wind Turbine Display - Fair</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="burger-menu.css"> <!-- Burger menu styles -->
+</head>
+
+<body>
+  <div class="background">
+    <!-- Fullscreen Icons -->
+    <div class="fullscreen-icons">
+      <img src="./images/fullscreen-icon.svg" alt="Go Fullscreen" class="fullscreen-enter" onclick="toggleFullscreen()"
+        title="Enter Fullscreen">
+      <img src="./images/exit-fullscreen-icon.svg" alt="Exit Fullscreen" class="fullscreen-exit"
+        onclick="toggleFullscreen()" title="Exit Fullscreen" style="display: none;">
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-slide active" id="offshore">
+        <img src="./images/offshore-wind-turbine.webp" alt="Offshore Wind Turbines">
+        <div class="carousel-caption">Offshore Wind Turbines</div>
+      </div>
+      <div class="carousel-slide" id="onshore">
+        <img src="./images/onshore-wind-turbine.webp" alt="Onshore Wind Turbines">
+        <div class="carousel-caption">Onshore Wind Turbines</div>
+      </div>
+      <div class="carousel-slide" id="transportation">
+        <img src="./images/transportation-of-wind-turbine-components.webp" alt="Wind Turbine Transportation">
+        <div class="carousel-caption">Transporting Wind Turbine Components</div>
+      </div>
+    </div>
+
+    <!-- Carousel Navigation Dots -->
+    <div class="carousel-controls">
+      <span class="carousel-dot" onclick="currentSlide(1)"></span>
+      <span class="carousel-dot" onclick="currentSlide(2)"></span>
+      <span class="carousel-dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Company Logo -->
+    <img src="./images/logo.svg" alt="Company Logo" class="logo">
+
+    <!-- Load the burger menu -->
+    <div id="burger-menu-container"></div>
+
+    <!-- Side Menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="info.html">Hans Aa General Info</a></li>
+        <li><a href="info2.html">Hans Aa General Info</a></li>
+        <li><a href="esg.html">ESG Strategy</a></li>
+        <li><a href="repair.html">Repair & Reuse Program</a></li>
+        <li><a href="recycling.html">Recycling Program</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+        <li><a href="engineering.html">Logo Engineering</a></li>
+        <li><a href="facilities.html">Facilities, World Map</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Load the burger menu HTML into the container
+    fetch('burger-menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('burger-menu-container').innerHTML = html;
+      });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
