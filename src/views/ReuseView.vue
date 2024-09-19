@@ -1,5 +1,10 @@
 <template>
-  <Element2 :headerText="headerText" :items="items" :video="video"></Element2>
+  <Element2
+    class="reuse"
+    :headerText="headerText"
+    :items="items"
+    :video="video"
+  ></Element2>
 </template>
 
 <script>
@@ -41,5 +46,10 @@ export default {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.reuse {
+  max-height: 100vh;
+  overflow: hidden;
 }
 </style>

@@ -17,7 +17,9 @@
       </div>
       <div class="line">
         <RouterLink to="/hub">HUBs</RouterLink>
-        <RouterLink to="/drivetrain-generators">Drivetrain/ <br />generators</RouterLink>
+        <RouterLink to="/drivetrain-generators"
+          >Drivetrain/ <br />generators</RouterLink
+        >
         <RouterLink to="/service">Service</RouterLink>
       </div>
     </div>
@@ -73,5 +75,10 @@ export default {
 .home video {
   width: 100%;
   height: 100%;
+}
+
+.home {
+  max-height: 100vh;
+  overflow: hidden;
 }
 </style>

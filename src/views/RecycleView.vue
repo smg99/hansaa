@@ -1,5 +1,10 @@
 <template>
-  <Element2 :headerText="headerText" :items="items" :video="video"></Element2>
+  <Element2
+    class="recycle"
+    :headerText="headerText"
+    :items="items"
+    :video="video"
+  ></Element2>
 </template>
 
 <script>
@@ -39,5 +44,10 @@ export default {
 <style scoped>
 .background {
   background-image: url("../set4/RECYCLE.jpeg");
+}
+
+.recycle {
+  max-height: 100vh;
+  overflow: hidden;
 }
 </style>
