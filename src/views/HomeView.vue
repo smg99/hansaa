@@ -4,7 +4,7 @@
     <!-- <video src="/set1/Hero_4K.mov" autoplay loop muted></video> -->
     <video src="/set1/01_Topbanner_forside.mp4" autoplay loop muted></video>
     <div class="navigation">
-      <p>Protective tarp solutions for the future of energy:</p>
+      <p>Protective solutions for the future of energy</p>
       <div class="line">
         <RouterLink to="/tower">Towers</RouterLink>
         <RouterLink to="/nacelle">Nacelles</RouterLink>

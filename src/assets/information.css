@@ -13,7 +13,7 @@
   position: absolute;
   bottom: 32%;
   left: 0vw;
-  padding: 1vw;
+  padding: 1vw 4vw;
   max-width: 50%;
   z-index: 10;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -42,10 +42,11 @@
   font-size: 1.5vw;
 }
 
-.carousel {
+.carousel,
+.vue3-marquee {
   position: absolute;
   bottom: 11%;
-  height: 20%;
+  height: 20% !important;
   left: 0;
   overflow: hidden;
   z-index: 1;
@@ -53,12 +54,16 @@
   align-items: center;
 }
 
-.marquee img,
+.marquee img {
+  width: 15vw;
+  padding: 0 2%;
+}
+/* .marquee img,
 .carousel img {
   width: 100%;
   padding: 0 2%;
   height: -webkit-fill-available;
-}
+} */
 
 @keyframes marquee {
   from {

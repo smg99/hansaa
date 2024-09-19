@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="side-logo-container">
-      <div class="logo-item">
+      <div class="logo-item" @click="goPage('reuse')">
         <img
           src="@/assets/images/reuse.png"
           alt="Repair Reuse"
@@ -9,7 +9,7 @@
         />
         <p class="logo-description">Reuse</p>
       </div>
-      <div class="logo-item">
+      <div class="logo-item" @click="goPage('recycle')">
         <img
           src="@/assets/images/recycle.png"
           alt="Repair Reuse 2"
@@ -17,7 +17,7 @@
         />
         <p class="logo-description">Recycle</p>
       </div>
-      <div class="logo-item">
+      <div class="logo-item" @click="goPage('engineering')">
         <img
           src="@/assets/images/engineering.png"
           alt="Innovation The Sands"
@@ -35,7 +35,15 @@
     />
   </footer>
 </template>
-
+<script>
+export default {
+  methods: {
+    goPage(page) {
+      this.$router.push(`/${page}`);
+    },
+  },
+};
+</script>
 <style scoped>
 /* Footer and logo styling */
 footer {
@@ -75,6 +83,8 @@ footer,
   padding: 0vh;
   border-radius: 8px;
   z-index: 15;
+  height: 100%;
+  align-items: center;
 }
 
 .logo-item {
@@ -82,10 +92,15 @@ footer,
   flex-direction: column;
   align-items: center;
   margin: 0 0.5vw;
+  cursor: pointer;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .side-logo {
-  height: 50px;
+  /* height: 50px; */
+  width: 3.5vw;
+  padding-top: 0.5vw;
 }
 
 .logo-description {

@@ -1,5 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TowerView from '../views/TowerView.vue'
+import NacelleView from '../views/NacelleView.vue'
+import HubsView from '../views/HubsView.vue'
+import BladesView from '../views/BladesView.vue'
+import EngineeringView from '../views/EngineeringView.vue'
+import ECView from '../views/ECView.vue'
+import DrivetrainGeneratorsView from '../views/DrivetrainGeneratorsView.vue'
+import TopCoverView from '../views/TopCoverView.vue'
+import RecycleView from '../views/RecycleView.vue'
+import ReuseView from '../views/ReuseView.vue'
+import QualityView from '../views/QualityView.vue'
+import MeetUsView from '../views/MeetUsView.vue'
+import ServiceView from '../views/ServiceView.vue'
+import OffshoreView from '../views/OffshoreView.vue'
+import EsgStrategyView from '../views/EsgStrategyView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,77 +27,77 @@ const router = createRouter({
     {
       path: '/tower',
       name: 'tower',
-      component: () => import('../views/TowerView.vue')
+      component: TowerView
     },
     {
       path: '/nacelle',
       name: 'nacelle',
-      component: () => import('../views/NacelleView.vue')
+      component: NacelleView
     },
     {
       path: '/hub',
       name: 'hub',
-      component: () => import('../views/HubsView.vue')
+      component: HubsView
     },
     {
       path: '/blade',
       name: 'blade',
-      component: () => import('../views/BladesView.vue')
+      component: BladesView
     },
     {
       path: '/engineering',
       name: 'engineering',
-      component: () => import('../views/EngineeringView.vue')
+      component: EngineeringView
     },
     {
       path: '/ec',
       name: 'ec',
-      component: () => import('../views/ECView.vue')
+      component: ECView
     },
     {
       path: '/drivetrain-generators',
       name: 'drivetrain-generators',
-      component: () => import('../views/DrivetrainGeneratorsView.vue')
+      component: DrivetrainGeneratorsView
     },
     {
       path: '/top-cover',
       name: 'top-cover',
-      component: () => import('../views/TopCoverView.vue')
+      component: TopCoverView
     },
     {
       path: '/recycle',
       name: 'recycle',
-      component: () => import('../views/RecycleView.vue')
+      component: RecycleView
     },
     {
       path: '/reuse',
       name: 'reuse',
-      component: () => import('../views/ReuseView.vue')
+      component: ReuseView
     },
     {
       path: '/quality',
       name: 'quality',
-      component: () => import('../views/QualityView.vue')
+      component: QualityView
     },
     {
       path: '/meet-us',
       name: 'meetus',
-      component: () => import('../views/MeetUsView.vue')
+      component: MeetUsView
     },
     {
       path: '/service',
       name: 'service',
-      component: () => import('../views/ServiceView.vue')
+      component: ServiceView
     },
     {
       path: '/offshore',
       name: 'offshore',
-      component: () => import('../views/OffshoreView.vue')
+      component: OffshoreView
     },
     {
       path: '/esg',
       name: 'esg',
-      component: () => import('../views/EsgStrategyView.vue')
+      component: EsgStrategyView
     }
   ]
 })
