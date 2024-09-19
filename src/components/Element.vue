@@ -79,4 +79,8 @@ export default {
 .ec .info-section {
   width: 65% !important;
 }
+
+.esg .info-section {
+  bottom: 45%;
+}
 </style>

@@ -78,6 +78,11 @@ const router = createRouter({
       path: '/offshore',
       name: 'offshore',
       component: () => import('../views/OffshoreView.vue')
+    },
+    {
+      path: '/esg',
+      name: 'esg',
+      component: () => import('../views/EsgStrategyView.vue')
     }
   ]
 })
