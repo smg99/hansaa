@@ -15,8 +15,7 @@ export default {
   data() {
     return {
       headerText: "Top cover solutions",
-      paragraphText: `Developed to meet very harsh environments and rough
-                    handling, yet still suitable for multiple times reuse.`,
+      paragraphText: `We create and produce fitted top covers for erected tower sections as a climate barrier to the rising wind turbine towers.`,
       images: [
         {
           src: "set4/TOPCOVER1.JPEG",

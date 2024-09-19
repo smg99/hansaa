@@ -14,7 +14,7 @@
   bottom: 32%;
   left: 0vw;
   padding: 1vw;
-  width: 50%;
+  max-width: 50%;
   z-index: 10;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   background: white;
@@ -23,7 +23,7 @@
 
 .info-section h1 {
   font-family: var(--font-heading);
-  font-size: 3vw;
+  font-size: 2.5vw;
   line-height: 1;
   margin-bottom: 2vh;
   text-shadow: none;
@@ -31,7 +31,7 @@
 
 .info-section h2 {
   font-family: var(--font-heading);
-  font-size: 2vw;
+  font-size: 1.7vw;
   line-height: 1;
   margin-bottom: 1vh;
   text-shadow: none;
@@ -57,12 +57,14 @@
 .carousel img {
   width: 100%;
   padding: 0 2%;
+  height: -webkit-fill-available;
 }
 
 @keyframes marquee {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -70,8 +72,8 @@
 
 .close-icon {
   position: absolute;
-  top: 2vh;
-  left: 2vw;
+  top: 4%;
+  left: 4%;
   width: 4vw;
   height: 6vh;
   display: flex;

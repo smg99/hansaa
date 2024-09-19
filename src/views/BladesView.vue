@@ -25,10 +25,6 @@ export default {
           alt: "Blade Solution",
         },
         {
-          src: "set3/BLADE2.JPG",
-          alt: "Blade Solution",
-        },
-        {
           src: "set3/BLADE3.JPG",
           alt: "Blade Solution",
         },

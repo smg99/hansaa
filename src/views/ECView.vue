@@ -1,5 +1,6 @@
 <template>
   <Element
+    class="ec"
     :headerText="headerText"
     :paragraphText="paragraphText"
     :images="images"
@@ -15,8 +16,7 @@ export default {
   data() {
     return {
       headerText: "Cover solutions for Electrical components",
-      paragraphText: `The electrical components gets an extra level of protection with
-            our alufiol, an humidity and air thight barrier.`,
+      paragraphText: `The electrical components get extra protection with our alufoil – a humidity and air-tight barrier.`,
       images: [
         {
           src: "set4/Electrical components (1).JPG",
@@ -34,7 +34,6 @@ export default {
           src: "set4/ELECTRICAL2.JPG",
           alt: "Electrical Components",
         },
-        
       ],
     };
   },

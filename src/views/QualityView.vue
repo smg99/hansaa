@@ -1,5 +1,5 @@
 <template>
-  <Element2 :headerText="headerText" :items="items"></Element2>
+  <Element2 :headerText="headerText" :items="items" page="quality"></Element2>
 </template>
 
 <script>

@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      headerText: "Cover Solutions for Towers",
+      headerText: "Cover solutions for towers",
       paragraphText: `We create tarpaulin cover solutions to protect wind turbine towers
         during on- and offshore transportation and during storage.`,
       images: [
@@ -71,6 +71,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("@/assets/images/3.jpg");
+  background-image: url("@/assets/images/Towers.JPG");
 }
 </style>

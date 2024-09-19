@@ -15,14 +15,12 @@
     <!-- Side Menu -->
     <div :class="['menu', { active: isMenuOpen }]" id="menu">
       <ul>
-        <li><RouterLink to="/">Hans Aa General Info</RouterLink></li>
-        <li><RouterLink to="/esg">ESG Strategy</RouterLink></li>
-        <li><RouterLink to="/repair">Repair & Reuse Program</RouterLink></li>
-        <li><RouterLink to="/recycle">Recycling Program</RouterLink></li>
+        <li><RouterLink to="/esg">Our ESG Goals</RouterLink></li>
+        <li><RouterLink to="/reuse">Reuse our covers</RouterLink></li>
+        <li><RouterLink to="/recycle">Recycling of our covers</RouterLink></li>
         <li><RouterLink to="/quality">Quality</RouterLink></li>
-        <li><RouterLink to="/meet-us">Meet the Team</RouterLink></li>
-        <li><RouterLink to="/engineering">Logo Engineering</RouterLink></li>
-        <li><RouterLink to="/meet-us">Facilities, World Map</RouterLink></li>
+        <li><RouterLink to="/engineering">Engineering</RouterLink></li>
+        <li><RouterLink to="/meet-us">Our facilities</RouterLink></li>
       </ul>
     </div>
   </div>
@@ -46,8 +44,8 @@ export default {
 <style scoped>
 .burger-menu {
   position: absolute;
-  top: 2vh;
-  right: 2vw;
+  top: 4%;
+  right: 4%;
   width: 4vw;
   height: 6vh;
   display: flex;
@@ -66,7 +64,7 @@ export default {
 }
 
 .burger-menu.active .line:nth-child(1) {
-  transform: rotate(45deg) translate(1vh, 1vh);
+  transform: rotate(45deg) translate(2vh, 2vh);
 }
 
 .burger-menu.active .line:nth-child(2) {
@@ -111,10 +109,10 @@ export default {
   color: var(--white);
   text-decoration: none;
   transition: color 0.3s;
+  font-family: "Nexa Heavy Bold";
 }
 
 .menu ul li a:hover {
   color: var(--sky-blue);
 }
-
 </style>

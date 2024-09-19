@@ -8,7 +8,27 @@
 
     <div class="info-section">
       <h1>{{ headerText }}</h1>
-      <div v-for="(item, index) in items" :key="`label-${index}`">
+
+      <data v-if="page == 'quality'" style="display: flex">
+        <div class="images">
+          <img
+            v-for="(item, index) in items"
+            :key="`label-${index}`"
+            :src="item.src"
+            :alt="`alt-img-${index}`"
+          />
+        </div>
+        <div class="text">
+          <div
+            v-for="(item, index) in items"
+            :key="`label-${index}`"
+            class="text"
+          >
+            <p v-html="item.label" style="margin: 2% 0"></p>
+          </div>
+        </div>
+      </data>
+      <div v-for="(item, index) in items" :key="`label-${index}`" v-else>
         <img :src="item.src" :alt="`alt-img-${index}`" :key="`img-${index}`" />
         <p v-html="item.label"></p>
       </div>
@@ -47,6 +67,7 @@ export default {
     headerText: String,
     items: Array,
     video: String,
+    page: String,
   },
   data() {
     return {};
@@ -97,5 +118,26 @@ export default {
 .info-section img {
   width: 5vw;
   margin-right: 1vw;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-section .images,
+.info-section .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1{
+  font-size: 2.5vw;
 }
 </style>

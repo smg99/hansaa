@@ -1,8 +1,5 @@
 <template>
-  <Element2
-    :headerText="headerText"
-    :items="items"
-  ></Element2>
+  <Element2 :headerText="headerText" :items="items" :video="video"></Element2>
 </template>
 
 <script>
@@ -13,6 +10,7 @@ export default {
   },
   data() {
     return {
+      video: "set4/RECYCLE1.mov",
       headerText: "Recycle our covers - Make it new",
       items: [
         {

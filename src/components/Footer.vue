@@ -68,7 +68,7 @@ footer,
 .side-logo-container {
   position: absolute;
   bottom: 0vh;
-  left: 2vw;
+  left: 4vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -85,12 +85,13 @@ footer,
 }
 
 .side-logo {
-  height: 43px;
+  height: 50px;
 }
 
 .logo-description {
   font-size: 0.8vw;
   color: var(--tarp-blue);
   text-align: center;
+  font-family: "Nexa Slap Book";
 }
 </style>

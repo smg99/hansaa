@@ -75,4 +75,8 @@ export default {
 .carousel__slide {
   /* align-items: flex-start; */
 }
+
+.ec .info-section {
+  width: 65% !important;
+}
 </style>

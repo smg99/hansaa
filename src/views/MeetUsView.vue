@@ -1,5 +1,10 @@
 <template>
   <Element2 :headerText="headerText" :items="items"></Element2>
+  <div class="us map-icon"></div>
+  <div class="dn map-icon"></div>
+  <div class="pl map-icon"></div>
+  <div class="cn map-icon"></div>
+  <div class="cn2 map-icon"></div>
 </template>
 
 <script>
@@ -25,7 +30,7 @@ export default {
           label: "Nevada, US: Stock",
         },
         {
-          src: "icons/cn.png",
+          src: "icons/cn2.png",
           label: "China: Manufacturing and refurbishment ",
         },
       ],
@@ -40,7 +45,38 @@ export default {
   background-image: url("icons/map.jpg");
 }
 
-.info-section img {
-  
+.map-icon {
+  position: absolute;
+  background-repeat: round;
+  width: 35px;
+  height: 35px;
+}
+.us {
+  background-image: url(../../icons/us2.png);
+  top: 27%;
+  left: 4%;
+}
+
+.dn {
+  background-image: url(../../icons/dn.jpg);
+  top: 14%;
+  left: 43%;
+}
+
+.pl {
+  background-image: url(../../icons/pl.png);
+  top: 17%;
+  left: 46%;
+}
+
+.cn {
+  background-image: url(../../icons/cn2.png);
+  top: 37%;
+  left: 79%;
+}
+.cn2 {
+  background-image: url(../../icons/cn2.png);
+  top: 35%;
+  left: 80%;
 }
 </style>
