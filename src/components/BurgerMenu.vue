@@ -15,12 +15,12 @@
     <!-- Side Menu -->
     <div :class="['menu', { active: isMenuOpen }]" id="menu">
       <ul>
-        <li><RouterLink to="/esg">Our ESG Goals</RouterLink></li>
-        <li><RouterLink to="/reuse">Reuse our covers</RouterLink></li>
-        <li><RouterLink to="/recycle">Recycling of our covers</RouterLink></li>
-        <li><RouterLink to="/quality">Quality</RouterLink></li>
-        <li><RouterLink to="/engineering">Engineering</RouterLink></li>
-        <li><RouterLink to="/meet-us">Our facilities</RouterLink></li>
+        <li><a @click="goPage('esg')">Our ESG Goals</a></li>
+        <li><a @click="goPage('reuse')">Reuse our covers</a></li>
+        <li><a @click="goPage('recycle')">Recycling of our covers</a></li>
+        <li><a @click="goPage('quality')">Quality</a></li>
+        <li><a @click="goPage('engineering')">Engineering</a></li>
+        <li><a @click="goPage('meet-us')">Our facilities</a></li>
       </ul>
     </div>
   </div>
@@ -37,11 +37,18 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    goPage(page) {
+      this.isMenuOpen = false;
+      this.$router.push(`/${page}`);
+    },
   },
 };
 </script>
 
 <style scoped>
+#menu a{
+  cursor: pointer;
+}
 .burger-menu {
   position: absolute;
   top: 4%;
