@@ -1,4 +1,4 @@
-import{E as t}from"./Element-BeSQnwVX.js";import{_ as r,c as i,r as o,o as s}from"./index-ruHZ7iFg.js";import"./carousel.es-BCUwBcE-.js";const a={components:{Element:t},data(){return{headerText:"Innovative engineering",subHeaderText:`Our extensive experience in cover solutions, <br />
+import{E as t}from"./Element-BVVHHuqe.js";import{_ as r,c as i,r as o,o as s}from"./index-CKqVvuUl.js";import"./carousel.es-DEpq5gjT.js";const a={components:{Element:t},data(){return{headerText:"Innovative engineering",subHeaderText:`Our extensive experience in cover solutions, <br />
       gives you the benefits of:`,paragraphText:`- Advanced in-house engineering <br/>
                       - Innovative tailored design <br/>
                       - Seamless integration from idea to
