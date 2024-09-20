@@ -1,8 +1,8 @@
 
 <template>
   <div class="home">
-    <video src="/set1/Hero_4K.mov" autoplay loop muted></video>
-    <!-- <video src="/set1/01_Topbanner_forside.mp4" autoplay loop muted></video> -->
+    <!-- <video src="/set1/Hero_4K.mov" autoplay loop muted></video> -->
+    <video src="/set1/01_Topbanner_forside.mp4" autoplay loop muted></video>
     <div class="navigation">
       <p>Protective solutions for the future of energy</p>
       <div class="line">
