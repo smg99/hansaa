@@ -13,7 +13,7 @@
   position: absolute;
   bottom: 32%;
   left: 0vw;
-  padding: 1vw 4vw;
+  padding: 1vw 1vw 1vw 4vw;
   max-width: 50%;
   z-index: 10;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

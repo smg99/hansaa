@@ -18,6 +18,9 @@ export default {
       headerText: "Cover solutions for Offshore foundations",
       paragraphText: `Protecting foundations against extreme weather conditions.`,
       images: [
+        { src: "set6/OffshoreF (1).jfif" },
+        { src: "set6/OffshoreF (2).jfif" },
+        { src: "set6/OffshoreF (3).jfif" },
         {
           src: "set5/Offshorefoundation.JPG",
           alt: "Offshore Foundation",
@@ -39,10 +42,6 @@ export default {
           alt: "Offshore Foundation",
         },
         {
-          src: "set5/Offshorefoundation9.JPG",
-          alt: "Offshore Foundation",
-        },
-        {
           src: "set5/Offshorefoundation10.JPG",
           alt: "Offshore Foundation",
         },
@@ -55,6 +54,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("/set5/Offshorefoundation10.JPG");
+  background-image: url("/set5/Offshorefoundation9.JPG");
 }
 </style>

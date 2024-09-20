@@ -20,10 +20,10 @@ export default {
                       Together with our engineers and craftsmen,
                       we find the right solution for each blade type.`,
       images: [
-        {
-          src: "set3/BLADE1.JPG",
-          alt: "Blade Solution",
-        },
+        {src: "set6/Blade (3).jfif"},
+        {src: "set6/Blade (4).jfif"},
+        {src: "set6/Blade.jfif"},
+        {src: "set6/Blades.jfif"},
         {
           src: "set3/BLADE3.JPG",
           alt: "Blade Solution",

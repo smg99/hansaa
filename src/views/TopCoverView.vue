@@ -17,6 +17,9 @@ export default {
       headerText: "Top cover solutions",
       paragraphText: `We create and produce fitted top covers for erected tower sections as a climate barrier to the rising wind turbine towers.`,
       images: [
+        { src: "set6/Top Cover.jfif" },
+        { src: "set6/Topcover 2.jfif" },
+        { src: "set6/Topcover.jfif" },
         {
           src: "set4/TOPCOVER1.JPEG",
           alt: "Top Cover",

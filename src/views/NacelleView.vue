@@ -19,10 +19,14 @@ export default {
 electronic or other sensitive installations are
 damaged from dirt or water.`,
       images: [
-        {
-          src: "set3/NACELLE.JPG",
-          alt: "Nacelle Solution 1",
-        },
+        { src: "set6/Nacelle (1).JPEG" },
+        { src: "set6/Nacelle (1).JPG" },
+        { src: "set6/Nacelle (2).JPEG" },
+        { src: "set6/Nacelle.jfif" },
+        // {
+        //   src: "set3/NACELLE.JPG",
+        //   alt: "Nacelle Solution 1",
+        // },
         {
           src: "set3/NACELLE1.JPG",
           alt: "Nacelle Solution 2",

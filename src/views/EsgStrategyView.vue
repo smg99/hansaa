@@ -184,5 +184,12 @@ export default {
 .item .text {
   font-family: "Nexa Slap Book";
   font-size: 0.9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vw;
+  position: relative;
+  vertical-align: middle;
 }
 </style>

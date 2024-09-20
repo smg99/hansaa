@@ -8,15 +8,15 @@
       <div class="line">
         <RouterLink to="/tower">Towers</RouterLink>
         <RouterLink to="/nacelle">Nacelles</RouterLink>
-        <RouterLink to="/top-cover">Top Covers</RouterLink>
+        <RouterLink to="/top-cover">Top covers</RouterLink>
       </div>
       <div class="line">
         <RouterLink to="/blade">Blades</RouterLink>
-        <RouterLink to="/ec">Electrical Components</RouterLink>
+        <RouterLink to="/ec">Electrical components</RouterLink>
         <RouterLink to="/offshore">Offshore foundations</RouterLink>
       </div>
       <div class="line">
-        <RouterLink to="/hub">HUBs</RouterLink>
+        <RouterLink to="/hub">Hubs</RouterLink>
         <RouterLink to="/drivetrain-generators"
           >Drivetrain/ <br />generators</RouterLink
         >

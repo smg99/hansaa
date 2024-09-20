@@ -19,10 +19,19 @@ export default {
 covers in cooperation with our customers to ensure a
 perfectly fitted protection cover.`,
       images: [
+        { src: "set6/HUB (2).jfif" },
+        { src: "set6/HUB (3).jfif" },
+        { src: "set6/HUB (4).jfif" },
         {
-          src: "set3/HUB.JPG",
-          alt: "HUB Solution",
+          src: "set3/HubOnDeck_HansAa.jpg",
+          alt: "HUB Solution 1",
         },
+        { src: "set6/HUB 3.jfif" },
+        { src: "set6/HUB.jfif" },
+        { src: "set6/HUB4.jfif" },
+        { src: "set6/HUB5 (1).jfif" },
+        { src: "set6/HUB5 (2).jfif" },
+
         {
           src: "set3/HUB1.JPG",
           alt: "HUB Solution 1",
@@ -64,6 +73,6 @@ perfectly fitted protection cover.`,
 
 <style scoped>
 .background {
-  background-image: url("/set3/HubOnDeck_HansAa.jpg");
+  background-image: url("/set6/USE AS HUB BACKGROUND.JPG");
 }
 </style>

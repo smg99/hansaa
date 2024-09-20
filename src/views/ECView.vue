@@ -18,6 +18,10 @@ export default {
       headerText: "Cover solutions for Electrical components",
       paragraphText: `The electrical components get extra protection with our alufoil – a humidity and air-tight barrier.`,
       images: [
+        { src: "set6/Electrical C (2).jfif" },
+        { src: "set6/Electrical c (3).jfif" },
+        { src: "set6/Electrical C.jfif" },
+        { src: "set6/ElectricalC.jfif" },
         {
           src: "set4/Electrical components (1).JPG",
           alt: "Electrical Components",

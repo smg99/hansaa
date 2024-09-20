@@ -18,6 +18,8 @@ export default {
       paragraphText: `Developed to meet very harsh environments and rough
                     handling, yet still suitable for multiple times reuse.`,
       images: [
+        { src: "set6/Generator 2.jfif" },
+        { src: "set6/Genrator.jfif" },
         {
           src: "set4/GENERATOR.JPG",
           alt: "Drivetrain Components",
@@ -46,6 +48,10 @@ export default {
           src: "set4/IMG_8036.JPG",
           alt: "Drivetrain Components",
         },
+        {
+          src: "set4/DRIVETRAIN MAIN.jpg",
+          alt: "Drivetrain Components",
+        },
       ],
     };
   },
@@ -55,6 +61,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("/set4/DRIVETRAIN MAIN.jpg");
+  background-image: url("/set6/USE AS BACKGROUND FOR GENERAOTS.JPG");
 }
 </style>

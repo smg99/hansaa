@@ -13,7 +13,7 @@
 
     <Vue3Marquee
       class="vue3-marquee"
-      duration="50"
+      duration="80"
       style="position: absolute"
       :clone="true"
     >

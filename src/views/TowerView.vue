@@ -18,10 +18,13 @@ export default {
       paragraphText: `We create tarpaulin cover solutions to protect wind turbine towers
         during on- and offshore transportation and during storage.`,
       images: [
-        {
-          src: "set3/TOWER.JPG",
-          alt: "Tower Solution 1",
-        },
+        { src: "set6/Tower (2).jfif" },
+        { src: "set6/Tower (3).jfif" },
+        { src: "set6/Tower (4).jfif" },
+        { src: "set6/Tower (5).jfif" },
+        { src: "set6/Tower 1.jfif" },
+        { src: "set6/Tower 11.jfif" },
+        { src: "set6/Tower.jfif" },
         {
           src: "set3/TOWER1.JPG",
           alt: "Tower Solution 2",
@@ -57,10 +60,6 @@ export default {
         {
           src: "set3/TOWER10.JPG",
           alt: "Tower Solution 10",
-        },
-        {
-          src: "set3/TOWER11.JPG",
-          alt: "Tower Solution 11",
         },
       ],
     };

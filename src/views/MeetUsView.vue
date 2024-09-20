@@ -18,19 +18,19 @@ export default {
       headerText: "Meet us worldwide",
       items: [
         {
-          src: "icons/dn.jpg",
-          label: "Denmark: Headquater",
+          src: "icons/dn1.png",
+          label: "Denmark: Headquarter and product development",
         },
         {
-          src: "icons/pl.png",
+          src: "icons/pl1.png",
           label: "Poland: Manufacturing and refurbishment",
         },
         {
-          src: "icons/us.jpg",
+          src: "icons/us1.png",
           label: "Nevada, US: Stock",
         },
         {
-          src: "icons/cn2.png",
+          src: "icons/cn1.png",
           label: "China: Manufacturing and refurbishment ",
         },
       ],
@@ -48,35 +48,35 @@ export default {
 .map-icon {
   position: absolute;
   background-repeat: round;
-  width: 35px;
-  height: 35px;
+  width: 1.6vw;
+  height: 1.6vw;
 }
 .us {
-  background-image: url(/icons/us2.png);
-  top: 27%;
-  left: 4%;
+  background-image: url(/icons/us1.png);
+  top: 27vh;
+  left: 4vw;
 }
 
 .dn {
-  background-image: url(/icons/dn.jpg);
-  top: 14%;
-  left: 43%;
+  background-image: url(/icons/dn1.png);
+  top: 16vh;
+  left: 44.5vw;
 }
 
 .pl {
-  background-image: url(/icons/pl.png);
-  top: 17%;
-  left: 46%;
+  background-image: url(/icons/pl1.png);
+  top: 18vh;
+  left: 46vw;
 }
 
 .cn {
-  background-image: url(/icons/cn2.png);
-  top: 37%;
-  left: 79%;
+  background-image: url(/icons/cn1.png);
+  top: 38vh;
+  left: 80vw;
 }
 .cn2 {
-  background-image: url(/icons/cn2.png);
-  top: 35%;
-  left: 80%;
+  background-image: url(/icons/cn1.png);
+  top: 36vh;
+  left: 80.5vw;
 }
 </style>

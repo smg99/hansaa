@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       headerText: "Service solutions",
-      paragraphText: `&nbsp;`,
+      paragraphText: `Our tarp solutions can be used in a big variety of applications and customized for specific use and environment. We have extensive experience in solving your challenges by applying our technical knowledge and world wide service.`,
       images: [
         {
           src: "set5/Service (1).JPEG",
