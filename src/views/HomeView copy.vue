@@ -42,7 +42,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 <style scoped>
 .home {
   background: #2f386c;
-  background-image: url('@/assets/images/home/coastal.svg');
+  background-image: url('/images/home/coastal.svg');
   width: 100%;
   height: 100%;
   position: absolute;
@@ -56,7 +56,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 }
 
 .monopile {
-  background-image: url("@/assets/images/home/monopile.png");
+  background-image: url("/images/home/monopile.png");
   width: 100px;
   height: 100px;
 }
@@ -76,7 +76,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 }
 
 .vessel {
-  background-image: url("@/assets/images/home/vessel.png");
+  background-image: url("/images/home/vessel.png");
   width: 200px;
   height: 200px;
   top: 20%;
@@ -84,7 +84,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 }
 
 .train {
-  background-image: url("@/assets/images/home/train.png");
+  background-image: url("/images/home/train.png");
   width: 200px;
   height: 200px;
   top: 30%;
@@ -92,7 +92,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 }
 
 .tower {
-  background-image: url("@/assets/images/home/tower1.png");
+  background-image: url("/images/home/tower1.png");
   width: 150px;
   height: 150px;
 }

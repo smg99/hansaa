@@ -71,6 +71,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("@/assets/images/Towers.JPG");
+  background-image: url("/images/Towers.JPG");
 }
 </style>

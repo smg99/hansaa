@@ -34,16 +34,16 @@
       </div>
     </div>
 
-    <carousel
+    <!-- <carousel
       :items-to-show="7"
       :wrap-around="true"
       class="marquee"
       :autoplay="5000"
     >
       <slide v-for="(image, index) in images" :key="`image-${index}`">
-        <img :key="`image1-${index}`" :src="image.src" :alt="image.alt" />
+        <img :key="`image1-${index}`" :src="'/'+image.src" :alt="image.alt" />
       </slide>
-    </carousel>
+    </carousel> -->
 
     <Footer />
   </div>
@@ -125,7 +125,7 @@ video {
   min-height: 100%;
   position: absolute;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

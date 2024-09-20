@@ -11,7 +11,12 @@
       <p v-html="paragraphText"></p>
     </div>
 
-    <Vue3Marquee class="vue3-marquee" duration="50" style="position: absolute">
+    <Vue3Marquee
+      class="vue3-marquee"
+      duration="50"
+      style="position: absolute"
+      :clone="true"
+    >
       <div
         class="marquee-item"
         v-for="(image, index) in images"
@@ -20,17 +25,6 @@
         <img :src="image.src" :alt="image.alt" />
       </div>
     </Vue3Marquee>
-
-    <!-- <carousel
-      :items-to-show="7"
-      :wrap-around="true"
-      class="marquee"
-      :autoplay="5000"
-    >
-      <slide v-for="(image, index) in images" :key="`image-${index}`">
-        <img :key="`image1-${index}`" :src="image.src" :alt="image.alt" />
-      </slide>
-    </carousel> -->
 
     <Footer />
   </div>

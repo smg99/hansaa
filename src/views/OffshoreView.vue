@@ -55,6 +55,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("../set5/Offshorefoundation10.JPG");
+  background-image: url("/set5/Offshorefoundation10.JPG");
 }
 </style>

@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("@/assets/images/5.JPG");
+  background-image: url("/images/5.JPG");
 }
 </style>

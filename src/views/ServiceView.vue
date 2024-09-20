@@ -95,6 +95,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("../set5/Image for ESG strategy.jpg");
+  background-image: url("/set5/Image for ESG strategy.jpg");
 }
 </style>

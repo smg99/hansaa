@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("../set4/RECYCLE.jpeg");
+  background-image: url("/set4/RECYCLE.jpeg");
 }
 
 .recycle {

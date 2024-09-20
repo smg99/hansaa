@@ -1,14 +1,36 @@
 {
   "name": "hansaa",
+  "author": {
+    "name": "Sumit Gajjar",
+    "email": "sumitg3767@gmail.com",
+    "url": "https://github.com/smg99"
+  },
+  "description": "Hansaa Fair App",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "main": "electron.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
+    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist",
+    "electron:dev": "vite build && electron .",
+    "electron:build": "vite build && electron-builder --win"
+  },
+  "build": {
+    "appId": "com.hansaa.desktop",
+    "icon": "assets/favicon.ico",
+    "productName": "Hansaa",
+    "files": [
+      "dist/**/*",
+      "electron.js"
+    ],
+    "win": {
+      "icon": "assets/favicon.ico",
+      "target": "nsis"
+    }
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -19,6 +41,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
+    "electron": "^32.1.1",
+    "electron-builder": "^25.0.5",
     "gh-pages": "^6.1.1",
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1"

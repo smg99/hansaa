@@ -49,6 +49,6 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("../set1/Good\ images/042_Hans-Aa_Siemens_Oesthavn-Esbjerg_CHO.JPG");
+  background-image: url("/set1/042_Hans-Aa_Siemens_Oesthavn-Esbjerg_CHO.JPG");
 }
 </style>

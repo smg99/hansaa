@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("icons/map.jpg");
+  background-image: url("/icons/map.jpg");
 }
 
 .map-icon {
@@ -52,30 +52,30 @@ export default {
   height: 35px;
 }
 .us {
-  background-image: url(../../icons/us2.png);
+  background-image: url(/icons/us2.png);
   top: 27%;
   left: 4%;
 }
 
 .dn {
-  background-image: url(../../icons/dn.jpg);
+  background-image: url(/icons/dn.jpg);
   top: 14%;
   left: 43%;
 }
 
 .pl {
-  background-image: url(../../icons/pl.png);
+  background-image: url(/icons/pl.png);
   top: 17%;
   left: 46%;
 }
 
 .cn {
-  background-image: url(../../icons/cn2.png);
+  background-image: url(/icons/cn2.png);
   top: 37%;
   left: 79%;
 }
 .cn2 {
-  background-image: url(../../icons/cn2.png);
+  background-image: url(/icons/cn2.png);
   top: 35%;
   left: 80%;
 }
