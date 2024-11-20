@@ -38,13 +38,13 @@
       <span class="title">SOCIAL RESPONSIBILITY</span>
       <p class="text">
         Consistently providing a healthy workplace that prioritizes safety
-        inclusivity and social responisiblity.
+        inclusivity and social responsibility.
       </p>
     </div>
     <div class="item">
       <span class="title">TRUSTWORTHY PARTNER</span>
       <p class="text">
-        Consistently promoting ethical, honest and transperant business
+        Consistently promoting ethical, honest and transparent business
         practices internally and across the value chain.
       </p>
     </div>
@@ -59,7 +59,7 @@ export default {
   },
   data() {
     return {
-      headerText: "Our suistainability targets",
+      headerText: "Our sustainability targets",
     };
   },
   methods: {},
